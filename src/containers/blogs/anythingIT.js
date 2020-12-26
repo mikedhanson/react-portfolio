@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import marked from "marked";
+//import marked from "marked";
 import SubHeader from "../../components/header/SubHeader";
 import Footer from "../../components/footer/Footer";
 import Contact from "../contact/Contact";
@@ -20,6 +20,7 @@ export default class AnythingIT extends Component {
 
     const blog = require("./2019/11/2019-11-11-wordpress-and-unraid/index.md");
 
+    /*
     fetch(blog)
       .then((response) => {
         return response.text();
@@ -29,6 +30,7 @@ export default class AnythingIT extends Component {
           markdown: marked(text),
         });
       });
+      */
   }
   changeTheme = () => {
     this.setState({ isDark: !this.state.isDark });
@@ -43,9 +45,10 @@ export default class AnythingIT extends Component {
         >
           <SubHeader />
 
-          <section>
+          {/**<section>
             <article dangerouslySetInnerHTML={{ __html: markdown }}></article>
-          </section>
+          </section> */}
+
 
           <Contact />
           <Footer />
