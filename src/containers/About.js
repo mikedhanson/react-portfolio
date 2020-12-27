@@ -27,8 +27,8 @@ export default class About extends Component {
       <div className={this.state.isDark ? "dark-mode" : null}>
         <StyleProvider value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }} >
           <SubHeader />
-
-            Coming soon.
+          
+          
 
           <Contact />
           <Footer />

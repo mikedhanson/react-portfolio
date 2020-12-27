@@ -5,7 +5,7 @@ date: "2019-12-27"
 
 ## NOTICE:
 
-This tutorial is assuming that you are using the LetsEncrypt docker container through UnRaid. If you are, then lets proceed.
+This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed.
 
 ## 1\. Edit jail.local
 

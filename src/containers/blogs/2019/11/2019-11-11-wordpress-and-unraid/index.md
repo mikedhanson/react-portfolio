@@ -11,7 +11,7 @@ This blog is something for me to look back at as a resource and to possibly help
 
 Make sure you have a domain name and that you have your 'CNAME's created so DNS can propagate. Pro tip, if you can change the TTL to 1 minute to help the propagation happen quicker. Googles default is 1 hour.  (The items crossed out are dynamic dns names for my public IP)
 
-![](images/Capture-7.png)
+![image7](images/Capture-7.png)
 
 ## 2\. Port Forwarding
 

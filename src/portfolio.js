@@ -8,8 +8,8 @@ import emoji from "react-easy-emoji";
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Mike",
-  title: "Hi all, I'm Mike",
-  subTitle: emoji("Security Enthusiast, Self-Hosting, Scripting "),
+  title: "Hello World, I'm Mike",
+  subTitle: emoji("Security Enthusiast, Self-Hosting, Typical Nerd"),
   resumeLink: "https://michaelhanson.dev/resume"
 };
 
@@ -224,19 +224,29 @@ const blogSection = {
 
   blogs: [
     {
-      url: "/anythingit",
+      url: "https://github.com/mikedhanson/AnythingIT",
       title: "Anything IT",
       description: "Anything IT started out as a project for myself to get more familiar with creating WordPress sites and web-hosting in general. Learn more here."
     },
     {
-      url: "",
-      title: "Some title",
-      description: "Long Description here"
+      url: "https://github.com/mikedhanson/AnythingIT",
+      title: "Running Wordpress on Unraid",
+      description: "Creating a reverse proxy within UnRaid to self-host WordPress sites securely. Also having the ability to self host other docker containers. "
     },
     {
-      url: "",
-      title: "Some title",
-      description: "Long Description here"
+      url: "https://github.com/mikedhanson/graycord/blob/master/README.md",
+      title: "View Graylog Notifications in Discord",
+      description: "Ran into a problem where I wanted Graylog alerts to send notifications to discord. Found out this is not an option from Graylog today so I did it myself. "
+    },
+    {
+      url: "https://gist.github.com/mikedhanson/77f64673c1f0dee9991ddc0697f30c81",
+      title: "Custom DNS Entries with PIhole",
+      description: "Assuming you already have Pihole up and running, create a new .conf file in the following directory: /etc/dnsmasq.d/yourname.conf"
+    },
+    {
+      url: "https://gist.github.com/mikedhanson/a5cfb372ba45cf816c6bd42a29c09a61",
+      title: "Setting up fail2ban with LE/NGINX/WP",
+      description: "This tutorial is assuming that you are using the Swag docker container through UnRaid. If you are, then lets proceed."
     }
   ]
 };

@@ -26,9 +26,21 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          <li> 
-            <a href="/Home">Home</a> 
+          <li>
+            <a href="/Home#opensource">Projects</a>
           </li>
+          <li>
+            <a href="/Home#blogs">Blog</a>
+          </li>
+          
+          <li>
+            <a href="/about">About</a>
+          </li>
+          
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li></li>
           <li>
             <a>
               <ToggleSwitch />
