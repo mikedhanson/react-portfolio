@@ -4,3 +4,4 @@ build
 .dockerignore
 Dockerfile
 notes.md
+debug.log

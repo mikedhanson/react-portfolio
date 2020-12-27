@@ -14,6 +14,7 @@ export default function Projects() {
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
   const { isDark } = useContext(StyleConsumer);
+  
   useEffect(() => {
     getRepoData();
   }, []);

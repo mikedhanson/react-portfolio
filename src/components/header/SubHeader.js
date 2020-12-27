@@ -1,14 +1,12 @@
 import React, { useContext } from "react";
 import Headroom from "react-headroom";
 import "./Header.css";
-import { BrowserRouter, Route, NavLink } from 'react-router-dom';
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
-import { greeting, workExperiences } from "../../portfolio";
+import { greeting } from "../../portfolio";
 
 function Header() {
   const { isDark } = useContext(StyleContext);
-  const exp = workExperiences.viewExperiences;
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>

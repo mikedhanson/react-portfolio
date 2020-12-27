@@ -1,5 +1,5 @@
 import React, { createRef, useContext } from "react";
-import { Fade, Slide, Zoom } from "react-reveal";
+import { Fade } from "react-reveal";
 import "./EducationCard.css";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -19,7 +19,7 @@ export default function EducationCard({ school }) {
           <Fade left duration={1000}>
             <div className="education-card">
               <div className="education-card-left">
-                <img
+                <img alt="school"
                   crossOrigin={"anonymous"}
                   ref={imgRef}
                   className="education-roundedimg"
@@ -59,7 +59,7 @@ export default function EducationCard({ school }) {
           <Fade right duration={1000}>
             <div className="skills-text-div">
               <div className="skills-image-div">
-                <img
+                <img alt="careys"
                   src={require("../../assets/images/careys.jpg")}
                 ></img>
               </div>

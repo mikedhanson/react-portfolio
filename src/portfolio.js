@@ -8,9 +8,9 @@ import emoji from "react-easy-emoji";
 const greeting = {
   /* Your Summary And Greeting Section */
   username: "Mike",
-  title: "Hello World, I'm Mike",
+  title: "<Hello World/> I'm Mike!",
   subTitle: emoji("Security Enthusiast, Self-Hosting, Typical Nerd"),
-  resumeLink: "https://michaelhanson.dev/resume"
+  resumeLink: "https://www.linkedin.com/in/michael-h-396129134/"
 };
 
 // Your Social Media Link
@@ -83,24 +83,24 @@ const educationInfo = {
 
 // Your top 3 proficient stacks/tech experience
 
-/*const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+const techStack = {
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
-      progressPercentage: "01%"  //Insert relative proficiency in percentage
+      Stack: "Powershell",  //Insert stack or technology you have experience in
+      progressPercentage: "53%"  //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "3%"
+      Stack: "Self-Hosting",
+      progressPercentage: "43%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "24%"
+      Stack: "Automation",
+      progressPercentage: "67%"
     }
   ]
 };
- */
+
 
 // Your top 3 work experiences
 
@@ -161,7 +161,7 @@ const openSource = {
 
 
 // Some Big Projects You have worked with your company
-
+/*
 const bigProjects = {
   title: "Big Projects",
   subtitle: "big projects subtitle",
@@ -176,7 +176,7 @@ const bigProjects = {
     }
   ]
 };
-
+*/
 // Your Achievement Section Include Your Certification Talks and More
 /*
 const achievementSection = {
@@ -262,6 +262,7 @@ export {
   socialMediaLinks,
   skillsSection,
   workExperiences,
+  techStack,
   educationInfo,
   openSource,
   blogSection,

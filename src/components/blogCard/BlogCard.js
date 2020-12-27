@@ -1,7 +1,6 @@
 import React from "react";
 import "./BlogCard.css";
-import { useHistory } from "react-router-dom";
-
+//import { useHistory } from "react-router-dom";
 
 export default function BlogCard({ blog, isDark }) {
   function openUrlInNewTab(url) {
@@ -12,12 +11,14 @@ export default function BlogCard({ blog, isDark }) {
     }
   }
 
-  const history = useHistory();
+  //const history = useHistory();
 
+  /*
   function handleClick(url) {
     console.log('The link was clicked.' + url); 
     history.push(url);
   }
+  */
 
   return (
    <div onClick={() =>  openUrlInNewTab(blog.url)}>
