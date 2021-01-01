@@ -39,15 +39,15 @@ const skillsSection = {
 
   softwareSkills: [
     {
-      skillName: "powershell",
+      skillName: "Powershell",
       fontAwesomeClassname: "fab fa-windows"
     },
     {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
@@ -55,9 +55,17 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    }
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Self-Hosting",
+      fontAwesomeClassname: "fas fa-laptop-house"
+    }    
   ]
 };
 

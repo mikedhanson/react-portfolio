@@ -10,7 +10,7 @@ function Header() {
   return (
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
-        <a href="home" className="logo">
+        <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-color">/&gt;</span>
@@ -25,10 +25,10 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           <li>
-            <a href="/Home#opensource">Projects</a>
+            <a href="/#opensource">Projects</a>
           </li>
           <li>
-            <a href="/Home#blogs">Blog</a>
+            <a href="/#blogs">Blog</a>
           </li>
           
           <li>
