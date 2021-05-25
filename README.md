@@ -21,7 +21,7 @@ docker build -t portfolio:latest .
 ```
 ## Run 
 ```
-docker run -it --rm -p 3001:3000 -e REACT_APP_GITHUB_TOKEN="somelongtoken" portfolio
+docker run -it --rm -p 3001:3000 -e REACT_APP_GITHUB_TOKEN="somelongtoken" react-portfolio
 ```
 
 ## Push to DockerHub 
@@ -30,6 +30,14 @@ docker login
 docker images
 docker tag bb38976d03cf mikehanson/portfolio:latest
 docker push mikehanson/portfolio
+```
+
+# Updates 
+
+### NPM 
+
+```
+npm install -g npm@(VERSION)
 ```
 
 ## Contributing
