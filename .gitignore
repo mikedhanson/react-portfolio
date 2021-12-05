@@ -5,3 +5,4 @@ build
 debug.log
 .DS_Store
 .gitignore
+debug.log
