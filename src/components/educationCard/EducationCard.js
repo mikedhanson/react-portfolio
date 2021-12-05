@@ -57,8 +57,8 @@ export default function EducationCard({ school }) {
 
           </Fade>
           <Fade right duration={1000}>
-            <div className="skills-text-div">
-              <div className="skills-image-div">
+            <div className="education-text-div">
+              <div className="education-image-div">
                 <img alt="careys"
                   src={require("../../assets/images/careys.jpg")}
                 ></img>

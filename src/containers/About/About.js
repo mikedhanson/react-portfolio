@@ -18,8 +18,17 @@ function Content() {
         <div class="about-child">
           <Fade left duration={1000}>
             <h1>About Me.</h1>
-            <p>I am currently working for the State of South Dakota as a Technology Engineer doing patch management. In my free time I spend a lot of time managing and changing up my home network. Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, it keeps me quite busy.</p>
-            <p>I am passionate about technology and tinkering with hardware. I enjoy coffee more than I should and like to spend time outdoors either camping or on the water.</p>
+            <p>
+              I recently took a new position with the State of South Dakota as an Endpoint Architect with the Service Delivery team. 
+              In my free time I spend a lot of time managing and changing up my home network. 
+              Between building my own docker images to controlling IOT things around the house to self-hosting my own react portfolio, 
+              it keeps me quite busy.
+              </p>
+
+            <p>
+              I am passionate about technology and tinkering with hardware. 
+              I enjoy coffee more than I should and like to spend time outdoors either camping or on the water.
+            </p>
             <div class="test-visual"></div>
             <img className="about-img-size" alt="hiking" src={ require("../../assets/images/hiking.jpg") }></img>
           </Fade>

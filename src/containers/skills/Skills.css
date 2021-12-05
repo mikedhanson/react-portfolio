@@ -16,6 +16,7 @@
   height: auto;
 }
 
+
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
@@ -35,6 +36,12 @@
     font-size: 30px;
     text-align: center;
   }
+  /* if mobile view hide img */
+  .skills-image-div > img {
+    display: none;
+    height: auto;
+  }
+  
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;

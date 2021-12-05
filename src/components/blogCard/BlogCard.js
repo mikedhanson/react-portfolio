@@ -4,7 +4,7 @@ import "./BlogCard.css";
 
 export default function BlogCard({ blog, isDark }) {
   function openUrlInNewTab(url) {
-    console.log('The link was clicked.' + url); 
+    console.log('The link was clicked.' + url);
     if (url !== undefined) {
       var win = window.open(url, "_blank");
       win.focus();
@@ -20,13 +20,21 @@ export default function BlogCard({ blog, isDark }) {
   }
   */
 
+  /** 
+   *  <div>
+            <p class={isDark ? "small-dark small" : "small"}>
+              {blog.url}
+            </p>
+          </div>
+  */
+
   return (
-   <div onClick={() =>  openUrlInNewTab(blog.url)}>
-      <div class={ isDark ? "blog-container dark-mode" : "blog-container" }>
+    <div onClick={() => openUrlInNewTab(blog.url)}>
+      <div class={isDark ? "blog-container dark-mode" : "blog-container"}>
         <a
           //class={ isDark ? "dark-mode blog-card blog-card-shadow" : "blog-card" }
           // removed shadw 
-          class={ isDark ? "dark-mode blog-card" : "blog-card" }
+          class={isDark ? "dark-mode blog-card" : "blog-card"}
           href="#blog"
         >
           <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>
@@ -35,6 +43,9 @@ export default function BlogCard({ blog, isDark }) {
           <p class={isDark ? "small-dark small" : "small"}>
             {blog.description}
           </p>
+
+         
+
           <div class="go-corner">
             <div class="go-arrow">→</div>
           </div>
