@@ -1,7 +1,0 @@
-node_modules
-build
-.env
-.dockerignore
-debug.log
-.DS_Store
-.gitignore
