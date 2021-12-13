@@ -14,12 +14,11 @@ function Content() {
         <div class="posts-child">
           <Fade bottom duration={1000} distance="20px">
             <div className="main" id="blogs">
-              <div className="blog-header" >
-            
-              </div>
+              <div className="blog-header" > </div>
               <div className="blog-main-div">
                 <div className="blog-text-div">
-
+                  <h1>Title </h1>
+                  <p>Coming soon</p>
                 </div>
               </div>
             </div>
@@ -59,6 +58,7 @@ export default class posts extends Component {
         <StyleProvider value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }} >
           <SubHeader />
           <Content />
+          <postSection/>
           <Contact />
           <contactInfo />
           <Footer />

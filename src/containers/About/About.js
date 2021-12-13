@@ -42,7 +42,6 @@ function Content() {
             <div>
               <li> Media Server:  Unraid</li>
               <li> Switch:        Juniper </li>
-              <li> Firewall:      Fortigate</li>
               <li> Access Points:  Unifi </li>
               <li> Battery Backup: APC </li>
             </div>
