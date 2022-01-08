@@ -26,10 +26,11 @@ const socialMediaLinks = {
 // Your Skills Section
 
 const skillsSection = {
-  title: "What I Do",
-  subTitle: "Currently an Endpoint Architect for South Dakota!",
+  title: "What I do",
+  subTitle: "Currently an Endpoint Architect for the State of South Dakota!👻",
   skills: [
     emoji("⚡ Automate all the things"),
+    emoji("⚡ System Admin"),
     emoji("⚡ Self Hosting"),
     emoji("⚡ Endpoint Security")
   ],
