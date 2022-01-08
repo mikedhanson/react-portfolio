@@ -14,7 +14,7 @@ function App() {
         <Route path="/" exact component={ Main } />
         <Route path="/about" exact component={ About } />
         <Route path="/posts" exact component={ Posts } />
-        <Route path="/Beta" exact component={ Beta } />
+        <Route path="/beta" exact component={ Beta } />
       </BrowserRouter>
     </div>
   );
