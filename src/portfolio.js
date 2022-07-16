@@ -44,6 +44,10 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-windows"
     },
     {
+      skillName: "Firebase",
+      fontAwesomeClassname: "fab fa-google"
+    },
+    {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },

@@ -10,13 +10,11 @@ function Content() {
   return (
     <div className="main">
       <div className="posts-parent">
-        <div class="posts-child">
           <Fade bottom duration={1000} distance="20px">
             <div className="main" id="blogs">
-              Coming soon. Maybe....
+              Firebase coming soon.
             </div>
           </Fade>
-        </div>
       </div>
     </div>
   );
@@ -41,9 +39,7 @@ export default class posts extends Component {
   render() {
     return (
       <div className={this.state.isDark ? "dark-mode" : null}>
-        <StyleProvider
-          value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
-        >
+        <StyleProvider value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}>
           <SubHeader />
           <Content />
           <Contact />
