@@ -4,3 +4,4 @@ build
 .dockerignore
 debug.log
 .gitignore
+package-lock.json
