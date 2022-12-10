@@ -7,14 +7,15 @@ import Skills from "./skills/Skills";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
-//import Contact from "./contact/Contact";
+import BigProjects from "./BigProjects/BigProjects";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
-//import Top from "./topbutton/Top";
 import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.css";
 import Profile from "./profile/Profile";
+//import Top from "./topbutton/Top";
+//import Contact from "./contact/Contact";
 //import { educationInfo } from "../portfolio";
 //import { Achievement } from './achievement/Achievement';
 
@@ -45,6 +46,7 @@ export default class Main extends Component {
           <Skills />
           <StackProgress />
           <WorkExperience />
+          <BigProjects/>
           <Education />
           <Projects />
           {/*<Achievement /> */}

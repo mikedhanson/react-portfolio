@@ -1,4 +1,7 @@
-## BUILD 
+## Project Build
+npm start
+
+## Docker Build 
 docker build -t react-portfolio .
 
 ## Run 

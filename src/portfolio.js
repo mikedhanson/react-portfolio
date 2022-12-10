@@ -29,19 +29,25 @@ const skillsSection = {
   title: "What I do",
   subTitle: "Currently an Endpoint Architect for the State of South Dakota!👻",
   skills: [
-    emoji("⚡ Automate all the things"),
-    emoji("⚡ System Admin"),
+    emoji("⚡ Automation"),
+    emoji("⚡ Sysadmin"),
     emoji("⚡ Self Hosting"),
     emoji("⚡ Endpoint Security")
   ],
 
-  /* Make Sure You include correct Font Awesome Classname to view your icon
-  https://fontawesome.com/icons?d=gallery */
+  /* 
+  Make Sure You include correct Font Awesome Classname to view your icon
+  https://fontawesome.com/icons?d=gallery 
+  */
 
   softwareSkills: [
     {
       skillName: "Powershell",
       fontAwesomeClassname: "fab fa-windows"
+    },
+    {
+      skillName: "C# .NET",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
       skillName: "Firebase",
@@ -91,10 +97,10 @@ const educationInfo = {
       schoolName: "University of South Dakota",
       logo: require("./assets/images/usd.png"),
       subHeader: "Computer Science",
-      duration: "Aug 2014 – May 2018",
+      duration: "Aug 2014 - May 2018",
       desc: "Business Administration minor",
       descBullets: [
-        "Dean’s List – Spring 2017 | Fall 2017",
+        "Dean's List - Spring 2017 | Fall 2017",
         "Association for Computing Machinery",
         "National Collegiate Cyber Defense Competition",
       ]
@@ -129,10 +135,10 @@ const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Service Delviery Endpoint Architecht",
+      role: "Service Delivery Endpoint Architect",
       company: "State of South Dakota",
       companylogo: require("./assets/images/bit.png"),
-      date: "June 2021 – Present",
+      date: "June 2021 - Present",
       desc: 'Design and prototype technology solutions at a high-level to solve everyday problems for the State of South Dakota.',
       descBullets: [
         "Boarding (on/off) process automations",
@@ -145,7 +151,7 @@ const workExperiences = {
       role: "Technology Engineer II",
       company: "State of South Dakota",
       companylogo: require("./assets/images/bit.png"),
-      date: "June 2018 – June 2021",
+      date: "June 2018 - June 2021",
       desc: "Patch Management, Endpoint security",
       descBullets: [
         "Automated the offboarding process.",
@@ -158,7 +164,7 @@ const workExperiences = {
       role: "Quality Assurance",
       company: "Smart Software Solutions inc.",
       companylogo: require("./assets/images/sss.jpg"),
-      date: "February 2016 – Present",
+      date: "February 2016 - Present",
       desc: "Create automated testing toolsets.",
       descBullets: [
         "Developed and maintained automation scripts",
@@ -171,7 +177,7 @@ const workExperiences = {
       role: "Network Technologies Internship",
       company: "State of South Dakota",
       companylogo: require("./assets/images/bit.png"),
-      date: "May 2016 – January 2018",
+      date: "May 2016 - January 2018",
       desc: "",
       descBullets: [
         "Installed and configured Cisco switches and access points, Juniper EX series switches, and various Fortinet firewalls.",
@@ -184,8 +190,10 @@ const workExperiences = {
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+/* 
+Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md 
+*/
 
 const openSource = {
   githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
@@ -193,37 +201,50 @@ const openSource = {
   showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false
 };
 
-
-// Some Big Projects You have worked with your company
-/*
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "big projects subtitle",
+  title: "Key Projects",
+  subtitle: "Unique projects that i've worked on.",
   projects: [
     {
-      //image: require("./assets/images/saayaHealthLogo.webp"),
-      link: ""
+      image: require("./assets/images/ms-dos.jpg"),
+      projectName: "Modernizing Logon Scripts",
+      projectDesc: "Helped co-write two .net apps that map users to network resources.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://gist.github.com/mikedhanson/f3ccd3c8b4f1fbad18dd02d2afe2d9cc"
+        }
+        //  you can add extra buttons here.
+      ]
     },
     {
-      //image: require("./assets/images/.webp"),
-      link: ""
+      image: require("./assets/images/psu.png"),
+      projectName: "Automating customer requests with ServiceNow",
+      projectDesc: "Implimented Powershell Universal for the sole purpose to modernize and centeralize our powershell scripts.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://github.com/mikedhanson?tab=repositories"
+        }
+      ]
     }
-  ]
+  ],
+  display: true // Set false to hide this section, defaults to true
 };
-*/
+
 
 // Your Achievement Section Include Your Certification Talks and More
 
 const achievementSection = {
 
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle: "Some Cool Stuff that I have done!",
+  title: emoji("Achievements And Certifications 🏆"),
+  subtitle: "Some Cool stuff that I have done!",
 
   achievementsCards: [
     {
       title: "SSS",
       subtitle: "SSS",
-      image: '',//require("./assets/images/codeInLogo.webp"),
+      image: '', //require("./assets/images/codeInLogo.webp"),
       footerLink: [
         { name: "SS", url: "" },
         { name: "SS", url: "" },
@@ -234,7 +255,10 @@ const achievementSection = {
       subtitle: "",
       image: '', //require("./assets/images/googleAssistantLogo.webp"),
       footerLink: [
-        { name: "", url: "" },
+        { 
+          name: "", 
+          url: "" 
+        },
       ] 
     }
   ]
@@ -293,6 +317,7 @@ export {
   socialMediaLinks,
   skillsSection,
   workExperiences,
+  bigProjects,
   techStack,
   educationInfo,
   achievementSection,
