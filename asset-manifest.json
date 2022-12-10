@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66f31530.chunk.css",
+    "main.js": "/static/js/main.b88efdba.chunk.js",
+    "main.js.map": "/static/js/main.b88efdba.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9bb17df5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9bb17df5.js.map",
+    "static/js/2.e911416f.chunk.js": "/static/js/2.e911416f.chunk.js",
+    "static/js/2.e911416f.chunk.js.map": "/static/js/2.e911416f.chunk.js.map",
+    "static/css/3.00373544.chunk.css": "/static/css/3.00373544.chunk.css",
+    "static/js/3.56b491dd.chunk.js": "/static/js/3.56b491dd.chunk.js",
+    "static/js/3.56b491dd.chunk.js.map": "/static/js/3.56b491dd.chunk.js.map",
+    "static/css/4.e7db4801.chunk.css": "/static/css/4.e7db4801.chunk.css",
+    "static/js/4.ddde764d.chunk.js": "/static/js/4.ddde764d.chunk.js",
+    "static/js/4.ddde764d.chunk.js.map": "/static/js/4.ddde764d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.45ceefcf4e4a6095e00669557e953928.js": "/precache-manifest.45ceefcf4e4a6095e00669557e953928.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/3.00373544.chunk.css.map": "/static/css/3.00373544.chunk.css.map",
+    "static/css/4.e7db4801.chunk.css.map": "/static/css/4.e7db4801.chunk.css.map",
+    "static/css/main.66f31530.chunk.css.map": "/static/css/main.66f31530.chunk.css.map",
+    "static/js/2.e911416f.chunk.js.LICENSE.txt": "/static/js/2.e911416f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/bit.png": "/static/media/bit.b17f053c.png",
+    "static/media/careys.jpg": "/static/media/careys.03ddcb0c.jpg",
+    "static/media/coding.svg": "/static/media/coding.4a20aa8a.svg",
+    "static/media/contactMail.webp": "/static/media/contactMail.68e84138.webp",
+    "static/media/contactMailDark.svg": "/static/media/contactMailDark.51cf7192.svg",
+    "static/media/diego.PNG": "/static/media/diego.d1be298f.PNG",
+    "static/media/diego2.jpg": "/static/media/diego2.2377ac33.jpg",
+    "static/media/hiking.jpg": "/static/media/hiking.9be80689.jpg",
+    "static/media/mancoding.svg": "/static/media/mancoding.6e2d4e76.svg",
+    "static/media/server.jpg": "/static/media/server.525a2b46.jpg",
+    "static/media/server.svg": "/static/media/server.aec6e555.svg",
+    "static/media/usd.png": "/static/media/usd.d7fa1114.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bb17df5.js",
+    "static/js/2.e911416f.chunk.js",
+    "static/css/main.66f31530.chunk.css",
+    "static/js/main.b88efdba.chunk.js"
+  ]
+}
