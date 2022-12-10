@@ -12,7 +12,7 @@ function Content() {
       <div className="posts-parent">
           <Fade bottom duration={1000} distance="20px">
             <div className="main" id="blogs">
-              Firebase coming soon.
+              Firebase intigration coming soon.
             </div>
           </Fade>
       </div>

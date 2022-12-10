@@ -14,10 +14,11 @@ import Education from "./education/Education";
 import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.css";
 import Profile from "./profile/Profile";
+import Achievement from './achievement/Achievement';
+
 //import Top from "./topbutton/Top";
 //import Contact from "./contact/Contact";
 //import { educationInfo } from "../portfolio";
-//import { Achievement } from './achievement/Achievement';
 
 export default class Main extends Component {
   constructor(props) {
@@ -49,11 +50,10 @@ export default class Main extends Component {
           <BigProjects/>
           <Education />
           <Projects />
-          {/*<Achievement /> */}
+          {/* <Achievement /> */}
           <Blogs />
           <Profile />
           <Footer />
-          {/*<Top /> */}
         </StyleProvider>
       </div>
     );

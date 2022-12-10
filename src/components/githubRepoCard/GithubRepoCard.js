@@ -24,7 +24,6 @@ export default function GithubRepoCard({ repo, isDark }) {
               role="img"
               viewBox="0 0 12 16"
               width="14"
-              className="repo-svg"
             >
               <path
                 fillRule="evenodd"
@@ -54,7 +53,6 @@ export default function GithubRepoCard({ repo, isDark }) {
                   viewBox="0 0 10 16"
                   width="12"
                   fill="rgb(106, 115, 125)"
-                  className="repo-star-svg"
                 >
                   <path
                     fillRule="evenodd"
@@ -72,7 +70,6 @@ export default function GithubRepoCard({ repo, isDark }) {
                   viewBox="0 0 14 16"
                   width="14"
                   fill="rgb(106, 115, 125)"
-                  className="repo-star-svg"
                 >
                   <path
                     fillRule="evenodd"

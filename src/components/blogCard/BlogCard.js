@@ -10,24 +10,6 @@ export default function BlogCard({ blog, isDark }) {
       win.focus();
     }
   }
-
-  //const history = useHistory();
-
-  /*
-  function handleClick(url) {
-    console.log('The link was clicked.' + url); 
-    history.push(url);
-  }
-  */
-
-  /** 
-   *  <div>
-            <p class={isDark ? "small-dark small" : "small"}>
-              {blog.url}
-            </p>
-          </div>
-  */
-
   return (
     <div onClick={() => openUrlInNewTab(blog.url)}>
       <div class={isDark ? "blog-container dark-mode" : "blog-container"}>
@@ -43,9 +25,6 @@ export default function BlogCard({ blog, isDark }) {
           <p class={isDark ? "small-dark small" : "small"}>
             {blog.description}
           </p>
-
-         
-
           <div class="go-corner">
             <div class="go-arrow">→</div>
           </div>

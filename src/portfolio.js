@@ -165,7 +165,7 @@ const workExperiences = {
       company: "Smart Software Solutions inc.",
       companylogo: require("./assets/images/sss.jpg"),
       date: "February 2016 - Present",
-      desc: "Create automated testing toolsets.",
+      desc: "Create automated testing tool sets.",
       descBullets: [
         "Developed and maintained automation scripts",
         "Wrote and performed automated UI and UX tests",
@@ -220,11 +220,11 @@ const bigProjects = {
     {
       image: require("./assets/images/psu.png"),
       projectName: "Automating customer requests with ServiceNow",
-      projectDesc: "Implimented Powershell Universal for the sole purpose to modernize and centeralize our powershell scripts.",
+      projectDesc: "Implemented Powershell Universal for the sole purpose to modernize and centralize our powershell scripts.",
       footerLink: [
         {
           name: "Learn More",
-          url: "https://github.com/mikedhanson?tab=repositories"
+          url: "https://gist.github.com/mikedhanson/23612796caa43b448945b31d81ea25b7"
         }
       ]
     }

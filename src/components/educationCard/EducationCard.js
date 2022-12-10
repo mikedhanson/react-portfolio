@@ -7,9 +7,7 @@ export default function EducationCard({ school }) {
   const imgRef = createRef();
 
   const GetDescBullets = ({ descBullets }) => {
-    return descBullets
-      ? descBullets.map((item) => <li className="subTitle">{item}</li>)
-      : null;
+    return descBullets ? descBullets.map((item) => <li className="subTitle">{item}</li>) : null;
   };
   const { isDark } = useContext(StyleContext);
   return (
@@ -19,7 +17,7 @@ export default function EducationCard({ school }) {
           <Fade left duration={1000}>
             <div className="education-card">
               <div className="education-card-left">
-                <img alt="school"
+                <img
                   crossOrigin={"anonymous"}
                   ref={imgRef}
                   className="education-roundedimg"
@@ -40,15 +38,14 @@ export default function EducationCard({ school }) {
                     {school.subHeader}
                   </h5>
                   <p
-                    className={`${isDark ? "dark-mode" : ""
-                      } education-text-duration`}
+                    className={`${isDark ? "dark-mode" : ""} education-text-duration`}
                   >
                     {school.duration}
                   </p>
                   <p className="education-text-desc">{school.desc}</p>
                   <div className="education-text-bullets">
                     <ul>
-                      <GetDescBullets descBullets={school.descBullets} />
+                      <GetDescBullets descBullets = { school.descBullets } />
                     </ul>
                   </div>
                 </div>
