@@ -16,7 +16,6 @@
   height: auto;
 }
 
-
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
@@ -41,7 +40,7 @@
     display: none;
     height: auto;
   }
-  
+
   .greeting-text-p {
     font-size: 16px;
     line-height: normal;

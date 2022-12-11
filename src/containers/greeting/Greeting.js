@@ -42,13 +42,13 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          
+
           <div className="greeting-image-div">
-            <img alt="kitty"
+            <img
+              alt="kitty"
               src={require("../../assets/images/diego.PNG")}
             ></img>
           </div>
-        
         </div>
       </div>
     </Fade>

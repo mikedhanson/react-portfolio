@@ -1,5 +1,3 @@
-
-
 import React, { useContext } from "react";
 import "./Contact.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -7,7 +5,6 @@ import { contactInfo } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 //import ContactForm from "./ContactForm";
-
 
 export default function Contact() {
   const { isDark } = useContext(StyleContext);
@@ -17,7 +14,6 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
-            
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
@@ -28,27 +24,15 @@ export default function Contact() {
             >
               {contactInfo.subtitle}
             </p>
-            <div className={ isDark ? "dark-mode contact-text-div" : "contact-text-div"} >
-            
-              {/*
-              <a className="contact-detail" href={"tel:" + contactInfo.number}>
-                {contactInfo.number}
-              </a>
-              <br />
-              <br />
-              <a
-                className="contact-detail-email"
-                href={"mailto:" + contactInfo.email_address}
-              >
-                {contactInfo.email_address}
-              </a>
-              <br />
-              <br />
-              */}
+            <div
+              className={
+                isDark ? "dark-mode contact-text-div" : "contact-text-div"
+              }
+            >
               <SocialMedia />
             </div>
           </div>
-          {/*<ContactForm /> */} 
+          {/*<ContactForm /> */}
           <div className="contact-image-div">
             <img
               alt=""
@@ -61,5 +45,4 @@ export default function Contact() {
       </div>
     </Fade>
   );
-
 }

@@ -8,6 +8,4 @@ const postSection = {
   ],
 };
 
-export { 
-    postSection 
-};
+export { postSection };

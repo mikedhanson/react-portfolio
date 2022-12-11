@@ -19,5 +19,5 @@ export default function Loading() {
         <div class="sk-circle12 sk-child"></div>
       </div>
     </div>
-    );
+  );
 }

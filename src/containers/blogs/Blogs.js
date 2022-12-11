@@ -12,7 +12,11 @@ export default function Blogs() {
       <div className="main" id="blogs">
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
-          <p className={ isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle" } >
+          <p
+            className={
+              isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
+            }
+          >
             {blogSection.subtitle}
           </p>
         </div>
@@ -21,7 +25,7 @@ export default function Blogs() {
             {blogSection.blogs.map((blog) => {
               return (
                 <BlogCard
-                  isDark={ isDark }
+                  isDark={isDark}
                   blog={{
                     url: blog.url,
                     image: blog.image,

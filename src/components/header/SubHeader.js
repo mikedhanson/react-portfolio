@@ -30,11 +30,11 @@ function Header() {
           <li>
             <a href="/#blogs">Blog</a>
           </li>
-          
+
           <li>
             <a href="/about">About</a>
           </li>
-          
+
           <li>
             <a href="#contact">Contact</a>
           </li>

@@ -1,5 +1,3 @@
-
-
 import React, { Component } from "react";
 import HeaderMain from "../components/header/HeaderMain";
 import Greeting from "./greeting/Greeting";
@@ -14,7 +12,7 @@ import Education from "./education/Education";
 import { StyleProvider } from "../contexts/StyleContext";
 import "./Main.css";
 import Profile from "./profile/Profile";
-import Achievement from './achievement/Achievement';
+import Achievement from "./achievement/Achievement";
 
 //import Top from "./topbutton/Top";
 //import Contact from "./contact/Contact";
@@ -47,7 +45,7 @@ export default class Main extends Component {
           <Skills />
           <StackProgress />
           <WorkExperience />
-          <BigProjects/>
+          <BigProjects />
           <Education />
           <Projects />
           {/* <Achievement /> */}

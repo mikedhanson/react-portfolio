@@ -12,11 +12,11 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            <img alt="Michael Coding"
+            <img
+              alt="Michael Coding"
               src={require("../../assets/images/mancoding.svg")}
             ></img>
           </div>
-
         </Fade>
         <Fade right duration={1000}>
           <div className="skills-text-div">
@@ -25,7 +25,13 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
-            <p className={isDark ? "dark-mode subTitle skills-text-subtitle" : "subTitle skills-text-subtitle"} >
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
@@ -33,7 +39,12 @@ export default function Skills() {
               {skillsSection.skills.map((skills) => {
                 return (
                   <p
-                    className={isDark ? "dark-mode subTitle skills-text" : "subTitle skills-text"}>
+                    className={
+                      isDark
+                        ? "dark-mode subTitle skills-text"
+                        : "subTitle skills-text"
+                    }
+                  >
                     {skills}
                   </p>
                 );

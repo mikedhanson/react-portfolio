@@ -15,7 +15,9 @@ export default function Projects() {
   const [repo, setrepo] = useState([]);
   const { isDark } = useContext(StyleConsumer);
 
-  useEffect(() => { getRepoData(); }, []);
+  useEffect(() => {
+    getRepoData();
+  }, []);
 
   function getRepoData() {
     const client = new ApolloClient({
@@ -29,8 +31,9 @@ export default function Projects() {
       },
     });
 
-    client.query({
-      query: gql`
+    client
+      .query({
+        query: gql`
         {
         user(login: "${openSource.githubUserName}") {
           pinnedItems(first: 6, types: [REPOSITORY]) {
@@ -58,16 +61,18 @@ export default function Projects() {
         }
       }
       `,
-    }).then((result) => {
-      setrepoFunction(result.data.user.pinnedItems.edges);
-      console.log(result);
-    }).catch(function (error) {
-      console.log(error);
-      setrepoFunction("Error");
-      console.log(
-        "Because of this Error, nothing is shown in place of Projects section. Projects section not configured"
-      );
-    });
+      })
+      .then((result) => {
+        setrepoFunction(result.data.user.pinnedItems.edges);
+        console.log(result);
+      })
+      .catch(function (error) {
+        console.log(error);
+        setrepoFunction("Error");
+        console.log(
+          "Because of this Error, nothing is shown in place of Projects section. Projects section not configured"
+        );
+      });
   }
 
   function setrepoFunction(array) {
