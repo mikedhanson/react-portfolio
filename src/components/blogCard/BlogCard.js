@@ -1,22 +1,23 @@
 import React from "react";
-import "./BlogCard.css";
-//import { useHistory } from "react-router-dom";
+import "./BlogCard.scss";
 
-export default function BlogCard({ blog, isDark }) {
-  function openUrlInNewTab(url) {
-    console.log("The link was clicked." + url);
-    if (url !== undefined) {
-      var win = window.open(url, "_blank");
-      win.focus();
+export default function BlogCard({blog, isDark}) {
+  function openUrlInNewTab(url, name) {
+    if (!url) {
+      console.log(`URL for ${name} not found`);
+      return;
     }
+    var win = window.open(url, "_blank");
+    win.focus();
   }
+
   return (
-    <div onClick={() => openUrlInNewTab(blog.url)}>
+    <div onClick={() => openUrlInNewTab(blog.url, blog.title)}>
       <div className={isDark ? "blog-container dark-mode" : "blog-container"}>
         <a
-          //class={ isDark ? "dark-mode blog-card blog-card-shadow" : "blog-card" }
-          // removed shadw
-          className={isDark ? "dark-mode blog-card" : "blog-card"}
+          className={
+            isDark ? "dark-mode blog-card blog-card-shadow" : "blog-card"
+          }
           href="#blog"
         >
           <h3 className={isDark ? "small-dark blog-title" : "blog-title"}>

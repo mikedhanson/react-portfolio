@@ -1,37 +1,57 @@
-import React from "react";
-import "./Achievement.css";
-
-export default function AchievementCard({ cardInfo, isDark }) {
-  function openUrlInNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+import React, {useContext} from "react";
+import "./Achievement.scss";
+import AchievementCard from "../../components/achievementCard/AchievementCard";
+import {achievementSection} from "../../portfolio";
+import {Fade} from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
+export default function Achievement() {
+  const {isDark} = useContext(StyleContext);
+  if (!achievementSection.display) {
+    return null;
   }
-
   return (
-    <div className={isDark ? "dark-mode certificate-card" : "certificate-card"}>
-      <div className="certificate-image-div">
-        <img src={cardInfo.image} alt="PWA" className="card-image"></img>
-      </div>
-      <div className="certificate-detail-div">
-        <h5 className={isDark ? "dark-mode card-title" : "card-title"}>
-          {cardInfo.title}
-        </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
-          {cardInfo.description}
-        </p>
-      </div>
-      <div className="certificate-card-footer">
-        {cardInfo.footer.map((v, i) => {
-          return (
-            <span
-              class={isDark ? "dark-mode certificate-tag" : "certificate-tag"}
-              onClick={() => openUrlInNewTab(v.url)}
+    <Fade bottom duration={1000} distance="20px">
+      <div className="main" id="achievements">
+        <div className="achievement-main-div">
+          <div className="achievement-header">
+            <h1
+              className={
+                isDark
+                  ? "dark-mode heading achievement-heading"
+                  : "heading achievement-heading"
+              }
             >
-              {v.name}
-            </span>
-          );
-        })}
+              {achievementSection.title}
+            </h1>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle achievement-subtitle"
+                  : "subTitle achievement-subtitle"
+              }
+            >
+              {achievementSection.subtitle}
+            </p>
+          </div>
+          <div className="achievement-cards-div">
+            {achievementSection.achievementsCards.map((card, i) => {
+              return (
+                <AchievementCard
+                  key={i}
+                  isDark={isDark}
+                  cardInfo={{
+                    title: card.title,
+                    description: card.subtitle,
+                    image: card.image,
+                    imageAlt: card.imageAlt,
+                    footer: card.footerLink
+                  }}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
-    </div>
+    </Fade>
   );
 }

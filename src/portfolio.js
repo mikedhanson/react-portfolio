@@ -1,28 +1,44 @@
-﻿/* Change this file to get your personal Portfolio */
+/* Change this file to get your personal Portfolio */
 
-// Your Summary And Greeting Section
+// To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Splash Screen
+
+const splashScreen = {
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 2000 // Set animation duration as per your animation
+};
+
+// Summary And Greeting Section
+
+const illustration = {
+  animated: true // Set to false to use static SVG
+};
 
 const greeting = {
-  /* Your Summary And Greeting Section */
   username: "Mike",
   title: "<Hello World/> I'm Mike!",
   subTitle: emoji("Security Enthusiast, Self-Hosting, Typical Nerd"),
   resumeLink: "https://www.linkedin.com/in/michael-h-396129134/",
+  displayGreeting: true // Set false to hide this section, defaults to true
 };
 
-// Your Social Media Link
-
+// Social Media Links
 const socialMediaLinks = {
   github: "https://github.com/mikedhanson",
   linkedin: "https://www.linkedin.com/in/michael-h-396129134/",
   dockerhub: "https://hub.docker.com/u/mikehanson",
   facebook: "https://www.facebook.com/notMrHanson",
   // Instagram and Twitter are also supported in the links!
+  display: true // Set true to display this section, defaults to false
 };
 
-// Your Skills Section
+
+// Skills Section
 
 const skillsSection = {
   title: "What I do",
@@ -85,11 +101,14 @@ const skillsSection = {
       fontAwesomeClassname: "fas fa-coffee",
     },
   ],
+  display: true
 };
 
-// Your education background
+
+// Education Section
 
 const educationInfo = {
+  display: true, // Set false to hide this section, defaults to true
   viewEducation: true, // Set it to true to see education section
   schools: [
     {
@@ -110,24 +129,25 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
+  viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Powershell", //Insert stack or technology you have experience in
-      progressPercentage: "53%", //Insert relative proficiency in percentage
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Self-Hosting",
-      progressPercentage: "43%",
+      Stack: "C#",
+      progressPercentage: "70%"
     },
     {
-      Stack: "Automation",
-      progressPercentage: "67%",
-    },
+      Stack: "JS",
+      progressPercentage: "60%"
+    }
   ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Your top 3 work experiences
+// Work experience section
 
 const workExperiences = {
   viewExperiences: true, //Set it to true to show workExperiences Section
@@ -188,15 +208,13 @@ const workExperiences = {
   ],
 };
 
-/* 
-Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md 
-*/
+
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: process.env.REACT_APP_GITHUB_TOKEN,
-  githubUserName: "mikedhanson", // Change to your github username to view your profile in Contact Section.
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to false
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const bigProjects = {
@@ -232,34 +250,47 @@ const bigProjects = {
   display: true, // Set false to hide this section, defaults to true
 };
 
-// Your Achievement Section Include Your Certification Talks and More
+// Achievement Section
+// Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆"),
-  subtitle: "Some Cool stuff that I have done!",
+  title: emoji("Achievements And Certifications 🏆 "),
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
-      title: "SSS",
-      subtitle: "SSS",
-      image: "", //require("./assets/images/codeInLogo.webp"),
-      footerLink: [
-        { name: "SS", url: "" },
-        { name: "SS", url: "" },
-      ],
-    },
-    {
-      title: "",
-      subtitle: "",
-      image: "", //require("./assets/images/googleAssistantLogo.webp"),
+      title: "Google Code-In Finalist",
+      subtitle:
+        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      image: require("./assets/images/bit.png"),
+      imageAlt: "",
       footerLink: [
         {
-          name: "",
-          url: "",
-        },
-      ],
-    },
+          name: "Certification",
+          url: ""
+        }
+      ]
+    }
   ],
+  display: false
+};
+
+const talkSection = {
+  title: "TALKS",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  talks: [
+    {
+      title: "Build Actions For Google Assistant",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "https://bit.ly/saadpasta-slides",
+      event_url: "https://www.facebook.com/events/2339906106275053/"
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -305,6 +336,7 @@ const blogSection = {
       description: "Coming soon...",
     },
   ],
+  display: true
 };
 
 const contactInfo = {
@@ -312,16 +344,42 @@ const contactInfo = {
   subtitle: "Want to grab a coffee or talk about tech?",
 };
 
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+  // Please Provide with Your Podcast embeded Link
+  podcast: [
+    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
+};
+
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
 export {
+  illustration,
   greeting,
   socialMediaLinks,
+  splashScreen,
   skillsSection,
-  workExperiences,
-  bigProjects,
-  techStack,
   educationInfo,
-  achievementSection,
+  techStack,
+  workExperiences,
   openSource,
+  bigProjects,
+  achievementSection,
   blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
+  twitterDetails,
+  isHireable
 };

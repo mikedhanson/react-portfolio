@@ -1,9 +1,14 @@
 import React from "react";
-import "./GithubRepoCard.css";
-import { Fade } from "react-reveal";
+import "./GithubRepoCard.scss";
+import {Fade} from "react-reveal";
+import {formatFileSizeDisplay} from "../../utils";
 
-export default function GithubRepoCard({ repo, isDark }) {
-  function openRepoinNewTab(url) {
+export default function GithubRepoCard({repo, isDark}) {
+  function openUrlInNewTab(url, name) {
+    if (!url) {
+      console.log(`URL in ${name} is undefined`);
+      return;
+    }
     var win = window.open(url, "_blank");
     win.focus();
   }
@@ -14,12 +19,12 @@ export default function GithubRepoCard({ repo, isDark }) {
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
           key={repo.node.id}
-          onClick={() => openRepoinNewTab(repo.node.url)}
+          onClick={() => openUrlInNewTab(repo.node.url, repo.node.name)}
         >
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
-              className="octicon"
+              className="octicon repo-svg"
               height="20"
               role="img"
               viewBox="0 0 12 16"
@@ -39,7 +44,7 @@ export default function GithubRepoCard({ repo, isDark }) {
                 <span>
                   <div
                     className="language-color"
-                    style={{ backgroundColor: repo.node.primaryLanguage.color }}
+                    style={{backgroundColor: repo.node.primaryLanguage.color}}
                   ></div>
                   <p>{repo.node.primaryLanguage.name}</p>
                 </span>
@@ -47,7 +52,7 @@ export default function GithubRepoCard({ repo, isDark }) {
               <span>
                 <svg
                   aria-hidden="true"
-                  className="octicon"
+                  className="octicon repo-star-svg"
                   height="20"
                   role="img"
                   viewBox="0 0 10 16"
@@ -64,7 +69,7 @@ export default function GithubRepoCard({ repo, isDark }) {
               <span>
                 <svg
                   aria-hidden="true"
-                  className="octicon"
+                  className="octicon repo-star-svg"
                   height="20"
                   role="img"
                   viewBox="0 0 14 16"
@@ -80,7 +85,7 @@ export default function GithubRepoCard({ repo, isDark }) {
               </span>
             </div>
             <div className="repo-right-stat">
-              <p>{repo.node.diskUsage} KB</p>
+              <p>{formatFileSizeDisplay(repo.node.diskUsage)}</p>
             </div>
           </div>
         </div>

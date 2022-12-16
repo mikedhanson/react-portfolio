@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import SubHeader from "../../components/header/SubHeader";
+//import SubHeader from "../../components/header/SubHeader"
 import Footer from "../../components/footer/Footer";
 import Contact from "../contact/Contact";
 import { StyleProvider } from "../../contexts/StyleContext";
 import { Fade } from "react-reveal";
 
 import "./About.css";
-import "../education/Education.css";
-import "../skills/Skills.css";
+//import "../education/Education.css";
+//import "../skills/Skills.css";
 
 function Content() {
   return (
@@ -87,7 +87,7 @@ export default class About extends Component {
         <StyleProvider
           value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
         >
-          <SubHeader />
+          {/* <SubHeader /> */}
           <Content />
           <Contact />
           <contactInfo />
