@@ -2918,9 +2918,7 @@
       "version": "0.0.7",
       "resolved": "https://registry.npmjs.org/ansi-html/-/ansi-html-0.0.7.tgz",
       "integrity": "sha512-JoAxEa1DfP9m2xfB/y2r/aKcwXNlltr4+0QSBC4TrLfcxyvepX2Pv0t/xpgGV5bGsDzCYV8SzjWgyCW0T9yYbA==",
-      "engines": [
-        "node >= 0.8.0"
-      ],
+      "engines": ["node >= 0.8.0"],
       "bin": {
         "ansi-html": "bin/ansi-html"
       }
@@ -4539,9 +4537,7 @@
       "integrity": "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==",
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
       }
@@ -4920,9 +4916,7 @@
       "version": "1.6.2",
       "resolved": "https://registry.npmjs.org/concat-stream/-/concat-stream-1.6.2.tgz",
       "integrity": "sha512-27HBghJxjiZtIk3Ycvn/4kbJk/1uZuJFfuPEns6LaEvpvG1f0hTea8lilrouyo9mVc2GWdcEZ8OLoGmSADlrCw==",
-      "engines": [
-        "node >= 0.8"
-      ],
+      "engines": ["node >= 0.8"],
       "dependencies": {
         "buffer-from": "^1.0.0",
         "inherits": "^2.0.3",
@@ -7161,9 +7155,7 @@
       "version": "1.3.0",
       "resolved": "https://registry.npmjs.org/extsprintf/-/extsprintf-1.3.0.tgz",
       "integrity": "sha512-11Ndz7Nv+mvAC1j0ktTa7fAb0vLyGGX+rMHNBYQviQDGU0Hw7lhctJANqbPhu9nV9/izT/IntTgZ7Im/9LJs9g==",
-      "engines": [
-        "node >=0.6.0"
-      ]
+      "engines": ["node >=0.6.0"]
     },
     "node_modules/fast-deep-equal": {
       "version": "3.1.3",
@@ -7608,9 +7600,7 @@
       "deprecated": "\"Please update to latest v2.3 or v2.2\"",
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
       }
@@ -9490,9 +9480,7 @@
       "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "dependencies": {
         "bindings": "^1.5.0",
         "nan": "^2.12.1"
@@ -17009,9 +16997,7 @@
       "version": "1.10.0",
       "resolved": "https://registry.npmjs.org/verror/-/verror-1.10.0.tgz",
       "integrity": "sha512-ZZKSmDAEFOijERBLkmYfJ+vmk3w+7hOLYDNkRCuRuMJGEmqYNCNLyBBFwWKVMhfwaEF3WOd0Zlw86U/WC/+nYw==",
-      "engines": [
-        "node >=0.6.0"
-      ],
+      "engines": ["node >=0.6.0"],
       "dependencies": {
         "assert-plus": "^1.0.0",
         "core-util-is": "1.0.2",
@@ -17116,9 +17102,7 @@
       "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "dependencies": {
         "bindings": "^1.5.0",
         "nan": "^2.12.1"
@@ -17345,9 +17329,7 @@
       "deprecated": "fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.",
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "dependencies": {
         "bindings": "^1.5.0",
         "nan": "^2.12.1"

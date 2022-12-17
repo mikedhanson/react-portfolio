@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 //import SubHeader from "../../components/header/SubHeader"
 import Footer from "../../components/footer/Footer";
 import Contact from "../contact/Contact";
-import { StyleProvider } from "../../contexts/StyleContext";
-import { Fade } from "react-reveal";
+import {StyleProvider} from "../../contexts/StyleContext";
+import {Fade} from "react-reveal";
 
 import "./About.css";
 //import "../education/Education.css";
@@ -69,23 +69,23 @@ export default class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isDark: false,
+      isDark: false
     };
   }
 
   componentDidMount() {
     const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-    this.setState({ isDark: darkPref.matches });
+    this.setState({isDark: darkPref.matches});
   }
   changeTheme = () => {
-    this.setState({ isDark: !this.state.isDark });
+    this.setState({isDark: !this.state.isDark});
   };
 
   render() {
     return (
       <div className={this.state.isDark ? "dark-mode" : null}>
         <StyleProvider
-          value={{ isDark: this.state.isDark, changeTheme: this.changeTheme }}
+          value={{isDark: this.state.isDark, changeTheme: this.changeTheme}}
         >
           {/* <SubHeader /> */}
           <Content />
