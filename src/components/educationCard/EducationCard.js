@@ -69,7 +69,7 @@ export default function EducationCard({school}) {
               <div className="education-image-div">
                 <img
                   alt="careys"
-                  src={require("../../assets/images/careys.jpg")}
+                  src={require("../../assets/images/careys.png")}
                 ></img>
               </div>
             </div>

@@ -3,13 +3,7 @@
 npm start
 
 ## Change start scripts
-
-#### node > 13
-
 - "start": "react-scripts --openssl-legacy-provider start",
-
-#### node < 13
-
 - "start": "react-scripts start",
 
 ## Docker Build
@@ -40,7 +34,7 @@ docker images
 2. git status
 3. git add .
 4. git commit -m 'commit message'
-5. git push origin master
+5. git push origin main
 
 ## Package.json Settings
 
