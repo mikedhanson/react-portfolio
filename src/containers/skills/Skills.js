@@ -16,10 +16,10 @@ export default function Skills() {
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
       <div className="skills-main-div">
         <Fade left duration={1000}>
-          <div className="skills-image-div">
+        <div className="skills-image-div">
               <img
-              alt="Michael Coding"
-              src={require("../../assets/images/mancoding.svg")}
+              alt="Coding"
+              src={require("../../assets/images/developerActivity.svg")}
             ></img>
           </div>
         </Fade>
@@ -51,7 +51,7 @@ export default function Skills() {
                         : "subTitle skills-text"
                     }
                   >
-                    {skills}
+                  {skills}
                   </p>
                 );
               })}
