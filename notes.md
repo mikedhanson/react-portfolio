@@ -3,13 +3,7 @@
 npm start
 
 ## Change start scripts
-
-#### node > 13
-
 - "start": "react-scripts --openssl-legacy-provider start",
-
-#### node < 13
-
 - "start": "react-scripts start",
 
 ## Docker Build
