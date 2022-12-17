@@ -132,19 +132,23 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
+      Stack: "Problem Solving / Quick learner",
+      progressPercentage: "99.9%"
+    },
+    {
       Stack: "Powershell", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "C#",
-      progressPercentage: "65%"
+      progressPercentage: "50%"
     },
     {
       Stack: "JS",
-      progressPercentage: "10%"
+      progressPercentage: "13%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
