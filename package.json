@@ -1,10 +1,10 @@
 {
   "homepage": "https://michaelhanson.dev/",
-  "name": "ReactPortfolio",
-  "version": "0.1.0",
+  "name": "react-portfolio",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "colorthief": "^2.3.0",
+    "colorthief": "^2.3.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "gh-pages": "^2.1.1",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "node fetch.js && react-scripts start",
+    "start": "react-scripts start",
     "build": "node fetch.js && react-scripts build",
     "dev": "node fetch.js && react-scripts --openssl-legacy-provider start",
     "deploy": "gh-pages -b main -d build",
