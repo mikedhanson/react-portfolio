@@ -5,3 +5,6 @@ build
 Dockerfile
 notes.md
 debug.log
+Dockerfile.prod
+Dockerfile copy
+docker-compose.yml
