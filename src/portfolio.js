@@ -152,7 +152,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  viewExperiences: true, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Service Delivery Endpoint Architect",
