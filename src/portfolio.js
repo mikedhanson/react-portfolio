@@ -22,7 +22,7 @@ const illustration = {
 const greeting = {
   username: "Mike",
   title: "Hello World",
-  subTitle: emoji("Security Enthusiast, Self-Hosting, Typical Nerd"),
+  subTitle: emoji("Endpoint Architect, Security Enthusiast, Self-Hosting"),
   resumeLink: "https://www.linkedin.com/in/michael-h-396129134/",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
