@@ -23,9 +23,9 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "start": "react-scripts start",
+    "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "dev": "node fetch.js && react-scripts --openssl-legacy-provider start",
+    "dev": "node fetch.js && react-scripts start",
     "deploy": "gh-pages -b main -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
