@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.44604e31.css",
-    "main.js": "/static/js/main.59642eea.js",
+    "main.js": "/static/js/main.38a4e34b.js",
     "static/css/64.3aa1c68a.chunk.css": "/static/css/64.3aa1c68a.chunk.css",
     "static/js/64.aabd9da3.chunk.js": "/static/js/64.aabd9da3.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
     "static/js/769.a261961d.chunk.js": "/static/js/769.a261961d.chunk.js",
     "static/media/careys.png": "/static/media/careys.37c3e5a3bd7528b3b9cf.png",
-    "static/media/homelab.jpeg": "/static/media/homelab.e18d5b29aa0a4e546988.jpeg",
+    "static/media/homelab.jpg": "/static/media/homelab.85de7b84aa6b90bd9a3e.jpg",
     "static/media/diego.PNG": "/static/media/diego.4810a785fdcf0582dd85.PNG",
-    "static/media/hiking.jpeg": "/static/media/hiking.85a71e7b08a248306048.jpeg",
+    "static/media/hiking.jpg": "/static/media/hiking.483a22c3c565259bbce3.jpg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/usd.png": "/static/media/usd.aa8571068322c9e1969f.png",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -20,7 +20,7 @@
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "main.44604e31.css.map": "/static/css/main.44604e31.css.map",
-    "main.59642eea.js.map": "/static/js/main.59642eea.js.map",
+    "main.38a4e34b.js.map": "/static/js/main.38a4e34b.js.map",
     "64.3aa1c68a.chunk.css.map": "/static/css/64.3aa1c68a.chunk.css.map",
     "64.aabd9da3.chunk.js.map": "/static/js/64.aabd9da3.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
@@ -28,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.44604e31.css",
-    "static/js/main.59642eea.js"
+    "static/js/main.38a4e34b.js"
   ]
 }
