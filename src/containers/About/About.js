@@ -2,7 +2,7 @@ import "./About.css";
 import {Fade} from "react-reveal";
 //import StyleContext from "../../contexts/StyleContext";
 import {StyleProvider} from "../../contexts/StyleContext";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Footer from "../../components/footer/Footer";
 import {useLocalStorage} from "../../hooks/useLocalStorage";
 import Header from "../../components/header/Header";
