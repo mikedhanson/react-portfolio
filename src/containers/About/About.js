@@ -27,13 +27,13 @@ function Content() {
               I enjoy coffee more than I should and like to spend time outdoors either camping or on the water.
             </p>
             <div class="test-visual"></div>
-            <img className="about-img-size" alt="hiking" src={ require("../../assets/images/hiking.jpg") }></img>
+            <img className="about-img-size" alt="hiking" src={ require("../../assets/images/hiking.jpeg") }></img>
           </Fade>
         </div>
         <div class="about-child">
           <Fade right duration={1000}>
             <h1>The Homelab.</h1>
-            <img className="about-img-size" alt="server" src={ require("../../assets/images/homelab.jpg") } ></img>
+            <img className="about-img-size" alt="server" src={ require("../../assets/images/server.jpeg") } ></img>
             <div class="test-visual"></div>
             <p> Eventually I'll do a writeup on my homelab but for now heres a picture and some details on what I'm running.</p>
             <div>
