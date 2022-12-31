@@ -3,8 +3,8 @@
   padding: 5px;
   size: 10px;
 }
-  
-  /* Clear floats after image containers */
+
+/* Clear floats after image containers */
 .about-img-row {
   display: flex;
 }
@@ -23,21 +23,18 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
-  
 }
 
 .about-visual {
   height: 100px;
   width: 100%;
   margin: 0.5rem 0;
-  
 }
 
 .about-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .about-parent {
@@ -54,6 +51,3 @@
   text-align: left;
   margin: 1rem;
 }
-
-
-  
